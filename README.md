@@ -59,7 +59,6 @@ Note: This should create an API with a JSON output that can be used by Homepage.
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-
 2. Add the widget to Homepage:
 
     ```
@@ -84,7 +83,6 @@ Note: This should create an API with a JSON output that can be used by Homepage.
                     1: date_added
                   color: theme
                   format: date
-
 Note: Script supports up to 20 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the scripts.
 
 Special thanks to haytada and Plancke in the Homepage Discord for all their help in making this happen! 
