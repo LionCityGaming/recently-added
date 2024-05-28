@@ -13,9 +13,6 @@
      - Find your authentication token / X-Plex-Token: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
      - Find your Plex Section ID: http://[PMS_IP_Address]:32400/library/sections?X-Plex-Token=[YourTokenGoesHere]
 
-    __Note__ : You can test that the Python script works by running it. If it produces an XML output similar to the screenshot below, you have done it right.
-
-
 ### Installation:
 1. Move Dockerfile, requirements.txt, and script to a folder in Docker (One each for Movies, and TV Shows).
 2. Navigate into the folder.
