@@ -8,10 +8,7 @@
  - Docker Compose
 
 ### Initial Setup:
- 1. Clone the contents:
-      - Recently Added Movies: 
-      - Recently Added TV Shows:
-
+1. Clone the contents of either the Movies or TV Shows folders (or both).
 2. Edit the information within movie.py/tv.py with your Plex Media Server (PMS) IP Address, PMS Library Section ID and Plex Token
      - Find your authentication token / X-Plex-Token: https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/
      - Find your Plex Section ID: http://[PMS_IP_Address]:32400/library/sections?X-Plex-Token=[YourTokenGoesHere]
