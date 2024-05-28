@@ -90,4 +90,4 @@ Note: This should create an API with a JSON output that can be used by Homepage.
 
 Note: Script supports up to 20 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the scripts.
 
-Special thanks to haytada and Planke in the Homepage Discord for all their help in making this happen! 
+Special thanks to haytada and Plancke in the Homepage Discord for all their help in making this happen! 
