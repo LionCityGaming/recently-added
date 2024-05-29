@@ -35,7 +35,7 @@
         external: true
 5. Build container: *docker-compose up -d*
 
-Note: This should create an API with a JSON output that can be used by Homepage. The api should be available at http://(IP):(port)/(api endpoint specified in the script)
+Note: This should create an API with a JSON output that can be used by Homepage. The api should be available at _http://(IP):(port)/(api endpoint specified in the script)_
   - Movies API Endpoint: *get_recent_movies*
   - TV Shows API Endpoint: *get_recent_shows*
 
