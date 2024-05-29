@@ -107,6 +107,6 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
                     1: date_added
                   color: theme
                   format: date
-Note: Script supports up to 50 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the scripts.
+Note: Script supports 50 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the scripts.
 
 Special thanks to haytada, MountainGod, and Plancke in the Homepage Discord for all their help in making this happen! 
