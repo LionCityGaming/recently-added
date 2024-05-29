@@ -109,4 +109,4 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
                   format: date
 Note: Script supports up to 50 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the scripts.
 
-Special thanks to haytada and Plancke in the Homepage Discord for all their help in making this happen! 
+Special thanks to haytada, MountainGod, and Plancke in the Homepage Discord for all their help in making this happen! 
