@@ -14,7 +14,7 @@
      - Find your Plex Section ID: http://[PMS_IP_Address]:32400/library/sections?X-Plex-Token=[YourTokenGoesHere]
 
 ### Installation:
-1. Move Dockerfile, requirements.txt, and script to a folder in Docker (One each for Movies, and TV Shows).
+1. Move folder/s containing Dockerfile, requirements.txt, and script to a folder in Docker.
 2. Navigate into the folder.
 3. Build the image: _docker build -t (app name) ._
 4. Create docker-compose.yml (or add to existing Homepage docer-compose.yml):
