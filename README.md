@@ -19,7 +19,8 @@
 3. Build the image: _docker build -t (app name) ._
 4. Create docker-compose.yml (or add to existing Homepage docer-compose.yml):
 
-    ```{version: "3.3"
+    ```yaml
+    version: "3.3"
     services:
       (app name):
         container_name: (container name)
@@ -42,7 +43,7 @@ Note: This should create an API with a JSON output that can be used by Homepage.
 ### Homepage Widget:
 1. Add to custom.css:
 
-    ``` 
+    ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
     &>div>div {
         display: block;
@@ -61,7 +62,7 @@ Note: This should create an API with a JSON output that can be used by Homepage.
             }
 2. Add the widget to Homepage:
 
-    ```
+    ```yaml
       - <Widget Name>
           id: #ABC123
           widget:
