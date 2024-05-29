@@ -2,6 +2,8 @@
 
 ## A customapi widget for Homepage (https://gethomepage.dev/) that displays recently-added Movies and TV Shows for Plex.
 
+![picture](https://i.imgur.com/umopaWL.png)
+
 ### Requirements:
  - Python
  - Docker
