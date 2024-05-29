@@ -19,7 +19,7 @@
 1. Move folder/s containing Dockerfile, requirements.txt, and script to a folder in Docker.
 2. Navigate into the folder.
 3. Build the image: _docker build -t (app name) ._
-4. Create docker-compose.yml (or add to existing Homepage docer-compose.yml):
+4. Create docker-compose.yml (or add to existing Homepage docker-compose.yml):
 
     ```yaml
     version: "3.3"
