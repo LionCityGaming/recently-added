@@ -1,4 +1,4 @@
-# recently-added
+# Recently Added on Plex
 
 ## A customapi widget for Homepage (https://gethomepage.dev/) that displays recently-added Movies and TV Shows for Plex.
 
