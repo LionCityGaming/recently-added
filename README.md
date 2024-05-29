@@ -16,7 +16,7 @@
 ### Installation:
 1. Move Dockerfile, requirements.txt, and script to a folder in Docker (One each for Movies, and TV Shows).
 2. Navigate into the folder.
-3. Build the image: _docker build -t (app name)_
+3. Build the image: _docker build -t (app name) ._
 4. Create docker-compose.yml:
 
     ```{version: "3.3"
