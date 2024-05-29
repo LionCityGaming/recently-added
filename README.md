@@ -77,15 +77,12 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
                 additionalField:
                   field:
                     0: date_added
-                  color: theme
-                  format: date
               - field:
                   1: title
                 additionalField:
                   field:
                     1: date_added
-                  color: theme
-                  format: date
+
       - Recently Added TV Shows
           id: #ABC123
           widget:
@@ -98,15 +95,12 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
                 additionalField:
                   field:
                     0: date_added
-                  color: theme
-                  format: date
               - field:
                   1: title
                 additionalField:
                   field:
                     1: date_added
-                  color: theme
-                  format: date
-Note: Script supports 50 most recently added Movies and TV Shows, sorted from most recent to earliest. This limit can be changed in the script.
+
+Note: Script supports 50 most recently added Movies and TV Shows, sorted from most recent (0) to earliest (49). This limit can be changed in the script.
 
 Special thanks to haytada, MountainGod, and Plancke in the Homepage Discord for all their help in making this happen! 
