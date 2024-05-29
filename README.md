@@ -62,7 +62,7 @@ Note: This should create an API with a JSON output that can be used by Homepage.
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-2. Add the widget to Homepage:
+2. Add the widget to Homepage (You can use "date_added" as the first field, and "title" in the additionalField if you prefer):
 
     ```yaml
       - <Widget Name>
