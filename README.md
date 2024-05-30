@@ -130,4 +130,4 @@
   - This limit can be changed in the script.
 
 ### Acknowledgement:
-Special thanks to haytada, MountainGod, and Plancke in the Homepage Discord for all their help in making this happen! 
+Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
