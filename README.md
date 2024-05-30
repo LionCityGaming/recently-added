@@ -91,6 +91,7 @@
     ```yaml
       - Recently Added Movies
           id: #ABC123
+          icon: radarr.png
           widget:
             type: customapi
             url: http://{IP}:{port}/api/recent_movies
@@ -109,6 +110,7 @@
 
       - Recently Added TV Shows
           id: #ABC123
+          icon: sonarr.png
           widget:
             type: customapi
             url: http://{IP}:{port}/api/recent_shows
