@@ -20,7 +20,7 @@
        TV_LIBRARY_ID = "your_tv_library_id"
        PLEX_TOKEN = "your_plex_token"
   - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
-  - Find your Plex Section IDs: *http://[your_plex_ip]:[your_plex_port]/library/sections?X-Plex-Token=[your_plex_token]*
+  - Find your Plex Section IDs: *http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}*
 
 ### Installation:
 1. Move recently-added folder containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml to Docker install location.
@@ -34,18 +34,18 @@
       recently-added:
         container_name: recently-added
         ports:
-          - <port>:8080
+          - {port}>:8080
         image: recently-added
         environment:
-          - TZ=<timezone>
+          - TZ={timezone}
         networks:
-          - <network name>
+          - {network name}
     networks:
-      <network name>:
+      {network name}:
         external: true
 5. Build container: *docker-compose up -d*
 
-Note: This should create APIs with a JSON output that can be used by Homepage. The APIs should be available at _http://(IP):(port)/api/(api endpoint)_
+Note: This should create APIs with a JSON output that can be used by Homepage. The APIs should be available at _http://{IP}:{port}/api/{api endpoint}_
   - Movies API Endpoint: *get_recent_movies*
   - TV Shows API Endpoint: *get_recent_shows*
 
