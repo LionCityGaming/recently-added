@@ -10,8 +10,13 @@
  - Docker Compose
 
 ### Initial Setup:
-1. Clone the recently-added folder.
-2. Edit the information within recently-added.py.
+1. Clone the _**recently-added**_ folder to your Docker installation location
+    - Dockerfile
+    - requirements.txt
+    - recently-added.py
+    - dockercompose.yml
+
+2. Edit the information within _**recently-added.py**_
 
     ```python
        # Define the variables
@@ -20,14 +25,21 @@
        MOVIE_LIBRARY_ID = "your_movie_library_id"
        TV_LIBRARY_ID = "your_tv_library_id"
        PLEX_TOKEN = "your_plex_token"
-  - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
-  - Find your Plex Section IDs: *http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}*
+### Note: 
+  - Find your authentication token / X-Plex-Token:
+
+    _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
+
+  - Find your Plex Section IDs: 
+
+    _**http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}**_
 
 ### Installation:
-1. Move folder (containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml) to Docker install location.
-2. Navigate into the folder.
-3. Build the image: _docker build -t recently-added ._
-4. Edit docker-compose.yml:
+3. Build the image
+
+   <code>docker build -t recently-added .</code>
+
+4. Edit _**docker-compose.yml**_:
 
     ```yaml
     version: "3.3"
@@ -44,16 +56,18 @@
     networks:
       {network name}:
         external: true
-5. Build container: *docker-compose up -d*
+5. Build container
+
+   <code>docker-compose up -d</code>
 
 ### Note:
 - This container creates APIs with a JSON output that can be used by Homepage.
-- The APIs should be available at _http://{IP}:{port}/api/{api endpoint}_
-   - Movies API Endpoint: *get_recent_movies*
-   - TV Shows API Endpoint: *get_recent_shows*
+- The APIs should be accessible at _**http://{IP}:{port}/api/{api endpoint}**_
+   - Movies API Endpoint: _**get_recent_movies**_
+   - TV Shows API Endpoint: _**get_recent_shows**_
 
 ### Homepage Widget:
-1. Add to custom.css:
+6. Add to _**custom.css**_:
 
     ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
@@ -72,7 +86,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-2. Add the widget to Homepage (You can use "date_added" as the first field, and "title" in the additionalField if you prefer):
+7. Add the widget to Homepage (You can use <code>date_added</code> as the first field, and <code>title</code> in the _**additionalField**_ if you prefer):
 
     ```yaml
       - Recently Added Movies
