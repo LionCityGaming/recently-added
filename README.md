@@ -10,7 +10,7 @@
  - Docker Compose
 
 ### Initial Setup:
-1. Clone the _**recently-added**_ folder to your Docker installation location:
+1. Clone the contents of _**recently-added**_ to your Docker installation location:
     - Dockerfile
     - requirements.txt
     - recently-added.py
