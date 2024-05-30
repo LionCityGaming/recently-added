@@ -20,7 +20,7 @@
        TV_LIBRARY_ID = "your_tv_library_id"
        PLEX_TOKEN = "your_plex_token"
   - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
-  - Find your Plex Section IDs: *http://[IP]:[Port]/library/sections?X-Plex-Token=[Token]*
+  - Find your Plex Section IDs: *http://[your_plex_ip]:[your_plex_port]/library/sections?X-Plex-Token=[your_plex_token]*
 
 ### Installation:
 1. Move recently-added folder containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml to Docker install location.
