@@ -23,7 +23,7 @@
   - Find your Plex Section IDs: *http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}*
 
 ### Installation:
-1. Move recently-added folder containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml to Docker install location.
+1. Move folder (containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml) to Docker install location.
 2. Navigate into the folder.
 3. Build the image: _docker build -t recently-added ._
 4. Edit docker-compose.yml:
