@@ -12,6 +12,7 @@
 ### Initial Setup:
 1. Clone the recently-added folder.
 2. Edit the information within recently-added.py.
+
     ```python
        # Define the variables
        PLEX_IP = "your_plex_ip"
