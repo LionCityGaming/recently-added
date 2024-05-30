@@ -19,12 +19,12 @@
 2. Edit the information within _**recently-added.py**_:
 
     ```python
-       # Define the variables
-       PLEX_IP = "your_plex_ip"
-       PLEX_PORT = "your_plex_port"
-       MOVIE_LIBRARY_ID = "your_movie_library_id"
-       TV_LIBRARY_ID = "your_tv_library_id"
-       PLEX_TOKEN = "your_plex_token"
+     # Define the variables
+     PLEX_IP = "your_plex_ip"
+     PLEX_PORT = "your_plex_port"
+     MOVIE_LIBRARY_ID = "your_movie_library_id"
+     TV_LIBRARY_ID = "your_tv_library_id"
+     PLEX_TOKEN = "your_plex_token"
 ### Note: 
   - Find your authentication token / X-Plex-Token:
 
