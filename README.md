@@ -10,13 +10,13 @@
  - Docker Compose
 
 ### Initial Setup:
-1. Clone the _**recently-added**_ folder to your Docker installation location
+1. Clone the _**recently-added**_ folder to your Docker installation location:
     - Dockerfile
     - requirements.txt
     - recently-added.py
     - dockercompose.yml
 
-2. Edit the information within _**recently-added.py**_
+2. Edit the information within _**recently-added.py**_:
 
     ```python
        # Define the variables
@@ -35,7 +35,7 @@
     _**http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}**_
 
 ### Installation:
-3. Build the image
+3. Build the image:
 
    <code>docker build -t recently-added .</code>
 
@@ -56,7 +56,7 @@
     networks:
       {network name}:
         external: true
-5. Build container
+5. Build container:
 
    <code>docker-compose up -d</code>
 
@@ -86,7 +86,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-7. Add the widget to Homepage (You can use <code>date_added</code> as the first field, and <code>title</code> in the _**additionalField**_ if you prefer):
+7. Add the widget to Homepage:
 
     ```yaml
       - Recently Added Movies
@@ -125,6 +125,7 @@
                   field:
                     1: date_added
 ### Note:
+  - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer
   - Script supports 50 most recently added Movies and TV Shows, sorted from most recent (0) to earliest (49).
   - This limit can be changed in the script.
 
