@@ -126,7 +126,7 @@
                     1: date_added
 ### Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer
-  - Script supports 50 most recently added Movies and TV Shows, sorted from most recent (0) to earliest (49).
+  - Script supports 50 most recently added Movies and TV Shows, sorted from most recent <code>0</code> to earliest <code>49</code>.
   - This limit can be changed in the script.
 
 ### Acknowledgement:
