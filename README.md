@@ -86,7 +86,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-7. Add the widget to Homepage:
+7. Add the widget to Homepage _**services.yaml**_:
 
     ```yaml
       - Recently Added Movies
