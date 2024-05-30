@@ -14,11 +14,11 @@
 2. Edit the information within recently-added.py.
     ```python
        # Define the variables
-         PLEX_IP = "your_plex_ip"
-         PLEX_PORT = "your_plex_port"
-         MOVIE_LIBRARY_ID = "your_movie_library_id"
-         TV_LIBRARY_ID = "your_tv_library_id"
-         PLEX_TOKEN = "your_plex_token"
+       PLEX_IP = "your_plex_ip"
+       PLEX_PORT = "your_plex_port"
+       MOVIE_LIBRARY_ID = "your_movie_library_id"
+       TV_LIBRARY_ID = "your_tv_library_id"
+       PLEX_TOKEN = "your_plex_token"
   - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
   - Find your Plex Section IDs: *http://[IP]:[Port]/library/sections?X-Plex-Token=[Token]*
 
