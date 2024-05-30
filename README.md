@@ -34,7 +34,7 @@
       recently-added:
         container_name: recently-added
         ports:
-          - {port}>:8080
+          - {port}:8080
         image: recently-added
         environment:
           - TZ={timezone}
