@@ -45,9 +45,11 @@
         external: true
 5. Build container: *docker-compose up -d*
 
-Note: This should create APIs with a JSON output that can be used by Homepage. The APIs should be available at _http://{IP}:{port}/api/{api endpoint}_
-  - Movies API Endpoint: *get_recent_movies*
-  - TV Shows API Endpoint: *get_recent_shows*
+### Note:
+- This container creates APIs with a JSON output that can be used by Homepage.
+- The APIs should be available at _http://{IP}:{port}/api/{api endpoint}_
+   - Movies API Endpoint: *get_recent_movies*
+   - TV Shows API Endpoint: *get_recent_shows*
 
 ### Homepage Widget:
 1. Add to custom.css:
@@ -107,7 +109,9 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
                 additionalField:
                   field:
                     1: date_added
+### Note:
+  - Script supports 50 most recently added Movies and TV Shows, sorted from most recent (0) to earliest (49).
+  - This limit can be changed in the script.
 
-Note: Script supports 50 most recently added Movies and TV Shows, sorted from most recent (0) to earliest (49). This limit can be changed in the script.
-
+### Acknowledgement:
 Special thanks to haytada, MountainGod, and Plancke in the Homepage Discord for all their help in making this happen! 
