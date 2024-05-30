@@ -76,7 +76,7 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
           id: #ABC123
           widget:
             type: customapi
-            url: http://<IP>:<Port>/api/recent_movies
+            url: http://{IP}:{port}/api/recent_movies
             display: list
             mappings:
               - field:
@@ -94,7 +94,7 @@ Note: This should create APIs with a JSON output that can be used by Homepage. T
           id: #ABC123
           widget:
             type: customapi
-            url: http://<IP>:<Port>/api/recent_shows
+            url: http://{IP}:{port}/api/recent_shows
             display: list
             mappings:
               - field:
