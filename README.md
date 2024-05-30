@@ -11,9 +11,16 @@
 
 ### Initial Setup:
 1. Clone the recently-added folder.
-2. Edit the information within recently-added.py with your Plex Media Server (PMS) IP Address, PMS Library Section IDs and Plex Token
-     - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
-     - Find your Plex Section IDs: *http://[IP]:[Port]/library/sections?X-Plex-Token=[Token]*
+2. Edit the information within recently-added.py.
+    ```python
+       # Define the variables
+         PLEX_IP = "your_plex_ip"
+         PLEX_PORT = "your_plex_port"
+         MOVIE_LIBRARY_ID = "your_movie_library_id"
+         TV_LIBRARY_ID = "your_tv_library_id"
+         PLEX_TOKEN = "your_plex_token"
+  - Find your authentication token / X-Plex-Token: *https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/*
+  - Find your Plex Section IDs: *http://[IP]:[Port]/library/sections?X-Plex-Token=[Token]*
 
 ### Installation:
 1. Move recently-added folder containing Dockerfile, requirements.txt, recently-added.py, and docker-compose.yml to Docker install location.
