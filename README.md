@@ -30,7 +30,7 @@
 
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
-  - Find your Plex Section IDs: 
+  - Find your Plex Section IDs (key): 
 
     _**http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}**_
 
@@ -126,10 +126,31 @@
                 additionalField:
                   field:
                     1: date_added
+
+      - Recently Added
+          id: #ABC123
+          icon: plex.png
+          widget:
+            type: customapi
+            url: http://{IP}:{port}/api/recent
+            requestBody: "{\"library\":\"all\"}"
+            display: list
+            mappings:
+              - field:
+                  0: title
+                additionalField:
+                  field:
+                    0: date_added
+              - field:
+                  1: title
+                additionalField:
+                  field:
+                    1: date_added
 ### Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
   - Script supports 50 most recently added Movies and TV Shows, sorted from most recent <code>0</code> to earliest <code>49</code>.
   - This limit can be changed in the script.
+  - Accepted values for the library key are <code>all</code>, library names eg. <code>Movies</code> or comma deliminated library names eg. <code>Movies,Series</code>.
 
 ### Acknowledgement:
 Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
