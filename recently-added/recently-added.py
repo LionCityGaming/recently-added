@@ -63,12 +63,12 @@ def create_recent_endpoint(item_type):
 
 # Create dynamic endpoints based on LIBRARY_TYPES
 for lib_type in LIBRARY_TYPES_LIST:
-    endpoint = f'/api/recent_{lib_type}'
+    endpoint = f'/api/{lib_type}'
     view_func = create_recent_endpoint(lib_type)
     app.add_url_rule(endpoint, endpoint, view_func)
 
-@app.route('/api/recent_items')
-def recent_items():
+@app.route('/api/all')
+def all_items():
     libraries = get_libraries()
     combined_output = {}
     for lib_type in LIBRARY_TYPES_LIST:
@@ -82,6 +82,12 @@ def recent_items():
             recent_data.extend(get_recent_items(lib_id, 'show' if lib_type == 'anime' else lib_type))
         
         formatted_items = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_data]
+        combined_output[lib_type] = formatted_items
+
+    return jsonify(combined_output)
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
         combined_output[lib_type] = formatted_items
 
     return jsonify(combined_output)
