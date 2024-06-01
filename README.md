@@ -29,39 +29,19 @@
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
 # Installation
-3. Build the image:
 
-   <code>docker build -t recently-added .</code>
-
-4. Edit _**docker-compose.yml**_:
-
-    ```yaml
-    version: "3.3"
-    services:
-      recently-added:
-        container_name: recently-added
-        ports:
-          - {port}:8080
-        image: recently-added
-        environment:
-          - TZ={timezone}
-        networks:
-          - {network name}
-    networks:
-      {network name}:
-        external: true
-5. Build container:
+3. Build container:
 
    <code>docker-compose up -d</code>
 
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
-- API accessible at _**<code>http://{IP}:{port}/api/{api endpoint}</code>**_
+- API accessible at _**<code>http://{IP}:4321/api/{api endpoint}</code>**_
    - Movies API Endpoint: _**<code>recent_movies</code>**_
    - TV Shows API Endpoint: _**<code>recent_shows</code>**_
 
 # Homepage Widget
-6. Add to _**custom.css**_:
+4. Add to _**custom.css**_:
 
     ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
@@ -80,7 +60,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-7. Add the widget to _**services.yaml**_:
+5. Add the widget to _**services.yaml**_:
 
     ```yaml
       - Recently Added Movies
