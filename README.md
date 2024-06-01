@@ -13,7 +13,7 @@
 
 2. Find your Plex Token
 
-   _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
+   https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token
 ## Configuration
 3. Define variables within **recently-added.py**
 
@@ -33,11 +33,11 @@
 ---
 _**NOTE**_
 
-- API accessible at _**http://{IP}:4321/api/{endpoint}**_
+- API accessible at _http://{IP}:4321/api/{endpoint}_
 
-  - Example: _**http://{IP}:4321/api/movie**_
+  - Example: _http://{IP}:4321/api/movie_
 
-- API for all recent items in all libraries accesible at _**http://{IP}:4321/api/all**_
+- API for all recent items in all libraries accesible at _http://{IP}:4321/api/all_
 ---
 ## Homepage Widget
 5. Add to **custom.css**:
