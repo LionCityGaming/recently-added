@@ -30,9 +30,12 @@
 
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
+
 - API accessible at _**<code>http://{IP}:4321/api/{recent_endpoint}</code>**_
+
   - <code>{recent_endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
-  - Example: _**<code>http://{IP}:4321/api/recent_movie</code>**_
+
+    - Example: _**<code>http://{IP}:4321/api/recent_movie</code>**_
 
 # Homepage Widget
 4. Add to <code>_**custom.css**_</code>:
@@ -77,9 +80,12 @@
                     1: date_added
 ## Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
+
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
+
   - This limit can be changed in the script.
     ```python
     recent_items = sorted_items[:50]
 # Acknowledgements:
+
 Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
