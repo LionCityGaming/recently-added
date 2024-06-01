@@ -33,7 +33,7 @@
 
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
 
-  - <code>{endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
+  - <code>{endpoint}</code> defined as per <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
 
     - Example: _**<code>http://{IP}:4321/api/movie</code>**_
 
