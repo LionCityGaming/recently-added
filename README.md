@@ -60,7 +60,7 @@
    - Movies API Endpoint: _**get_recent_movies**_
    - TV Shows API Endpoint: _**get_recent_shows**_
 
-### Homepage Widget:
+# Homepage Widget
 6. Add to _**custom.css**_:
 
     ```css 
