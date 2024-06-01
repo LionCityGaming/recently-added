@@ -24,7 +24,7 @@
 
 4. Start up application by running <code>docker-compose up -d</code>
 ---
-_**NOTE:**_
+_**NOTE**_
 - Container creates API with a JSON output that can be used by Homepage.
 
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
@@ -77,7 +77,7 @@ _**NOTE:**_
                   field:
                     1: date_added
 ---
-_**NOTE:**_
+_**NOTE**_
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
 
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
