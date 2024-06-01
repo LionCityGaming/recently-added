@@ -14,7 +14,7 @@
     - Dockerfile
     - requirements.txt
     - recently-added.py
-    - dockercompose.yml
+    - docker-compose.yml
 
 2. Edit the information within _**recently-added.py**_:
 
