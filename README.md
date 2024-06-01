@@ -25,7 +25,6 @@
 4. Start up application by running <code>docker-compose up -d</code>
 ---
 _**NOTE**_
-- Container creates API with a JSON output that can be used by Homepage.
 
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
 
