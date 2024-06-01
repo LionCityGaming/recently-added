@@ -125,5 +125,5 @@
   - Script supports 50 most recently added Movies and TV Shows, sorted from most recent <code>0</code> to earliest <code>49</code>.
   - This limit can be changed in the script.
 
-## Acknowledgement:
+# Acknowledgements:
 Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
