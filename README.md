@@ -22,8 +22,8 @@
      PLEX_IP = "your_plex_ip"
      PLEX_PORT = "your_plex_port"
      PLEX_TOKEN = "your_plex_token"
-     # Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
-     LIBRARY_TYPES = "your_plex_libraries"
+     # Comma-separated list of Plex library names to create endpoints for (e.g. "Movies,TV Shows,Anime")
+     LIBRARY_NAMES = "your_plex_libraries"
 ## Installation
 
 4. Start up application
@@ -34,8 +34,9 @@
 _**NOTE**_
 
 - API accessible at _http://{IP}:4321/api/{endpoint}_
+  - replace all spaces in library names with an underscore <code>_</code> in endpoint
 
-  - Example: _http://{IP}:4321/api/movie_
+  - Example: _http://{IP}:4321/api/tv_shows_
 
 - API for all recent items in all libraries accesible at _http://{IP}:4321/api/all_
 ---
