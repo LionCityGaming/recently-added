@@ -19,7 +19,7 @@
      PLEX_IP = "your_plex_ip"
      PLEX_PORT = "your_plex_port"
      PLEX_TOKEN = "your_plex_token"
-     LIBRARY_TYPES = "movie,show,anime,4K"  # Comma-separated list of library types to create endpoints for
+     LIBRARY_TYPES = "your_plex_libraries"  # Comma-separated list of library types to create endpoints for
 ## Note: 
   - Find your Plex Token: _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
