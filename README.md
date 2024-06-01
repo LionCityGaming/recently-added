@@ -68,7 +68,7 @@
           icon: radarr.png
           widget:
             type: customapi
-            url: http://{IP}:{port}/api/recent_movies
+            url: http://{IP}:4321/api/recent_movies
             display: list
             mappings:
               - field:
@@ -87,7 +87,7 @@
           icon: sonarr.png
           widget:
             type: customapi
-            url: http://{IP}:{port}/api/recent_shows
+            url: http://{IP}:4321/api/recent_shows
             display: list
             mappings:
               - field:
