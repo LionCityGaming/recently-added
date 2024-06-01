@@ -8,6 +8,10 @@ app = Flask(__name__)
 PLEX_IP = "your_plex_ip"
 PLEX_PORT = "your_plex_port"
 PLEX_TOKEN = "your_plex_token"
+LIBRARY_TYPES = "your_plex_libraries"  # Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
+
+# Convert LIBRARY_TYPES to a list
+LIBRARY_TYPES_LIST = [lib_type.strip() for lib_type in LIBRARY_TYPES.split(',')]
 
 def get_libraries():
     url = f"http://{PLEX_IP}:{PLEX_PORT}/library/sections?X-Plex-Token={PLEX_TOKEN}"
@@ -37,53 +41,47 @@ def format_date(timestamp):
     dt_object = datetime.fromtimestamp(int(timestamp))
     return dt_object.strftime("%b %d")
 
-@app.route('/api/recent_movies')
-def recent_movies():
-    libraries = get_libraries()
-    movie_libraries = [lib['key'] for lib in libraries if lib['type'] == 'movie']
-    recent_movies_data = []
-    for lib_id in movie_libraries:
-        recent_movies_data.extend(get_recent_items(lib_id, 'movie'))
-    if recent_movies_data:
-        formatted_movies = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_movies_data]
-        return jsonify(formatted_movies)
-    else:
-        return jsonify({"message": "No recent movies found."}), 404
+def create_recent_endpoint(item_type):
+    def recent_items():
+        libraries = get_libraries()
+        if item_type == 'anime':
+            lib_keys = [lib['key'] for lib in libraries if 'anime' in lib['title'].lower()]
+        else:
+            lib_keys = [lib['key'] for lib in libraries if lib['type'] == item_type]
+        
+        recent_data = []
+        for lib_id in lib_keys:
+            recent_data.extend(get_recent_items(lib_id, 'show' if item_type == 'anime' else item_type))
+        
+        if recent_data:
+            formatted_items = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_data]
+            return jsonify(formatted_items)
+        else:
+            return jsonify({"message": f"No recent {item_type}s found."}), 404
+    return recent_items
 
-@app.route('/api/recent_shows')
-def recent_shows():
-    libraries = get_libraries()
-    show_libraries = [lib['key'] for lib in libraries if lib['type'] == 'show']
-    recent_shows_data = []
-    for lib_id in show_libraries:
-        recent_shows_data.extend(get_recent_items(lib_id, 'show'))
-    if recent_shows_data:
-        formatted_shows = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_shows_data]
-        return jsonify(formatted_shows)
-    else:
-        return jsonify({"error": "No recent shows found."}), 404
+# Create dynamic endpoints based on LIBRARY_TYPES
+for lib_type in LIBRARY_TYPES_LIST:
+    endpoint = f'/api/recent_{lib_type}'
+    view_func = create_recent_endpoint(lib_type)
+    app.add_url_rule(endpoint, endpoint, view_func)
 
 @app.route('/api/recent_items')
 def recent_items():
     libraries = get_libraries()
-    movie_libraries = [lib['key'] for lib in libraries if lib['type'] == 'movie']
-    show_libraries = [lib['key'] for lib in libraries if lib['type'] == 'show']
-
-    recent_movies_data = []
-    for lib_id in movie_libraries:
-        recent_movies_data.extend(get_recent_items(lib_id, 'movie'))
-
-    recent_shows_data = []
-    for lib_id in show_libraries:
-        recent_shows_data.extend(get_recent_items(lib_id, 'show'))
-
-    formatted_movies = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_movies_data]
-    formatted_shows = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_shows_data]
-
-    combined_output = {
-        "movies": formatted_movies,
-        "shows": formatted_shows
-    }
+    combined_output = {}
+    for lib_type in LIBRARY_TYPES_LIST:
+        if lib_type == 'anime':
+            lib_keys = [lib['key'] for lib in libraries if 'anime' in lib['title'].lower()]
+        else:
+            lib_keys = [lib['key'] for lib in libraries if lib['type'] == lib_type]
+        
+        recent_data = []
+        for lib_id in lib_keys:
+            recent_data.extend(get_recent_items(lib_id, 'show' if lib_type == 'anime' else lib_type))
+        
+        formatted_items = [{"title": item['title'], "date_added": format_date(item['addedAt'])} for item in recent_data]
+        combined_output[lib_type] = formatted_items
 
     return jsonify(combined_output)
 
