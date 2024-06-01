@@ -35,9 +35,7 @@ _**NOTE**_
 
 - API accessible at _**http://{IP}:4321/api/{endpoint}**_
 
-  - <code>{endpoint}</code> defined as per <code>Library_Types</code>
-
-    - Example: _**http://{IP}:4321/api/movie**_
+  - Example: _**http://{IP}:4321/api/movie**_
 
 - API for all recent items in all libraries accesible at _**http://{IP}:4321/api/all**_
 ---
