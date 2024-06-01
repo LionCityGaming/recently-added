@@ -55,10 +55,10 @@
    <code>docker-compose up -d</code>
 
 ## Note:
-- This container creates APIs with a JSON output that can be used by Homepage.
-- The APIs should be accessible at _**http://{IP}:{port}/api/{api endpoint}**_
-   - Movies API Endpoint: _**recent_movies**_
-   - TV Shows API Endpoint: _**recent_shows**_
+- Container creates API with a JSON output that can be used by Homepage.
+- API accessible at _**<code>http://{IP}:{port}/api/{api endpoint}</code>**_
+   - Movies API Endpoint: _**<code>recent_movies</code>**_
+   - TV Shows API Endpoint: _**<code>recent_shows</code>**_
 
 # Homepage Widget
 6. Add to _**custom.css**_:
