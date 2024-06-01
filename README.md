@@ -15,7 +15,7 @@
 
    _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 ## Configuration
-3. Define variables within <code>_**recently-added.py**_</code>:
+3. Define variables within **recently-added.py**
 
     ```python
      # Define the variables
@@ -33,16 +33,16 @@
 ---
 _**NOTE**_
 
-- API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
+- API accessible at _**http://{IP}:4321/api/{endpoint}**_
 
-  - <code>{endpoint}</code> defined as per <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
+  - <code>{endpoint}</code> defined as per <code>Library_Types</code>
 
-    - Example: _**<code>http://{IP}:4321/api/movie</code>**_
+    - Example: _**http://{IP}:4321/api/movie**_
 
-- API for all recent items in all libraries accesible at _**<code>http://{IP}:4321/api/all</code>**_
+- API for all recent items in all libraries accesible at _**http://{IP}:4321/api/all**_
 ---
 ## Homepage Widget
-5. Add to <code>_**custom.css**_</code>:
+5. Add to **custom.css**:
 
     ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
@@ -61,7 +61,7 @@ _**NOTE**_
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-6. Add the widget to <code>_**services.yaml**_</code>:
+6. Add to **services.yaml**:
 
     ```yaml
       - {widget name}
