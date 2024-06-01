@@ -31,11 +31,13 @@
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
 
-- API accessible at _**<code>http://{IP}:4321/api/{recent_endpoint}</code>**_
+- API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
 
-  - <code>{recent_endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
+  - <code>{endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
 
-    - Example: _**<code>http://{IP}:4321/api/recent_movie</code>**_
+    - Example: _**<code>http://{IP}:4321/api/movie</code>**_
+
+- API for all recent items in all libraries accesible at _**<code>http://{IP}:4321/api/all</code>**_
 
 # Homepage Widget
 4. Add to <code>_**custom.css**_</code>:
