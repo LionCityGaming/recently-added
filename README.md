@@ -57,8 +57,8 @@
 ### Note:
 - This container creates APIs with a JSON output that can be used by Homepage.
 - The APIs should be accessible at _**http://{IP}:{port}/api/{api endpoint}**_
-   - Movies API Endpoint: _**get_recent_movies**_
-   - TV Shows API Endpoint: _**get_recent_shows**_
+   - Movies API Endpoint: _**recent_movies**_
+   - TV Shows API Endpoint: _**recent_shows**_
 
 # Homepage Widget
 6. Add to _**custom.css**_:
