@@ -4,15 +4,17 @@
 
 ![picture](https://i.imgur.com/umopaWL.png)
 
-# Requirements
+## Requirements
  - Python
  - Docker
  - Docker Compose
 
-# Setup
-1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location:
+## Setup
+1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location
 
-2. Define variables within <code>_**recently-added.py**_</code>:
+2. Find your Plex Token: _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
+## Configuration
+3. Define variables within <code>_**recently-added.py**_</code>:
 
     ```python
      # Define the variables
@@ -21,14 +23,11 @@
      PLEX_TOKEN = "your_plex_token"
      # Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
      LIBRARY_TYPES = "your_plex_libraries"
-## Note: 
-  - Find your Plex Token: _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
+## Installation
 
-# Installation
+4. Start up application by running <code>docker-compose up -d</code>
 
-3. Start up application by running <code>docker-compose up -d</code>
-
-## Note:
+### Note:
 - Container creates API with a JSON output that can be used by Homepage.
 
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
@@ -40,7 +39,7 @@
 - API for all recent items in all libraries accesible at _**<code>http://{IP}:4321/api/all</code>**_
 
 # Homepage Widget
-4. Add to <code>_**custom.css**_</code>:
+5. Add to <code>_**custom.css**_</code>:
 
     ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
@@ -59,7 +58,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-5. Add the widget to <code>_**services.yaml**_</code>:
+6. Add the widget to <code>_**services.yaml**_</code>:
 
     ```yaml
       - {NAME}
@@ -80,7 +79,7 @@
                 additionalField:
                   field:
                     1: date_added
-## Note:
+### Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
 
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
@@ -90,4 +89,8 @@
     recent_items = sorted_items[:50]
 # Acknowledgements:
 
-Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
+Special thanks for all their help in making this happen!
+
+- **haytada**
+- **MountainGod**
+- **Plancke**
