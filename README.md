@@ -23,7 +23,7 @@
      PLEX_IP = "your_plex_ip"
      PLEX_PORT = "your_plex_port"
      PLEX_TOKEN = "your_plex_token"
-### Note: 
+## Note: 
   - Find your Plex Token:
 
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
@@ -54,7 +54,7 @@
 
    <code>docker-compose up -d</code>
 
-### Note:
+## Note:
 - This container creates APIs with a JSON output that can be used by Homepage.
 - The APIs should be accessible at _**http://{IP}:{port}/api/{api endpoint}**_
    - Movies API Endpoint: _**recent_movies**_
@@ -120,10 +120,10 @@
                 additionalField:
                   field:
                     1: date_added
-### Note:
+## Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
   - Script supports 50 most recently added Movies and TV Shows, sorted from most recent <code>0</code> to earliest <code>49</code>.
   - This limit can be changed in the script.
 
-### Acknowledgement:
+## Acknowledgement:
 Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
