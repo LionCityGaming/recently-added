@@ -12,7 +12,7 @@
 # Setup
 1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location:
 
-2. Edit the information within <code>_**recently-added.py**_</code>:
+2. Define variables within <code>_**recently-added.py**_</code>:
 
     ```python
      # Define the variables
