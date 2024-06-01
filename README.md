@@ -22,17 +22,11 @@
      # Define the variables
      PLEX_IP = "your_plex_ip"
      PLEX_PORT = "your_plex_port"
-     MOVIE_LIBRARY_ID = "your_movie_library_id"
-     TV_LIBRARY_ID = "your_tv_library_id"
      PLEX_TOKEN = "your_plex_token"
 ### Note: 
   - Find your authentication token / X-Plex-Token:
 
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
-
-  - Find your Plex Section IDs: 
-
-    _**http://{your_plex_ip}:{your_plex_port}/library/sections?X-Plex-Token={your_plex_token}**_
 
 ### Installation:
 3. Build the image:
