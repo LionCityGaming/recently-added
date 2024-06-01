@@ -19,7 +19,8 @@
      PLEX_IP = "your_plex_ip"
      PLEX_PORT = "your_plex_port"
      PLEX_TOKEN = "your_plex_token"
-     LIBRARY_TYPES = "your_plex_libraries"  # Comma-separated list of library types to create endpoints for
+     # Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
+     LIBRARY_TYPES = "your_plex_libraries"
 ## Note: 
   - Find your Plex Token: _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
@@ -30,6 +31,7 @@
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
+  - {endpoint} defined by <code>Library_Type</code> in _**recently_added.py**_.
 
 # Homepage Widget
 4. Add to _**custom.css**_:
