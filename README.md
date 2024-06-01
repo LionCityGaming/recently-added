@@ -57,7 +57,7 @@ _**NOTE**_
 6. Add the widget to <code>_**services.yaml**_</code>:
 
     ```yaml
-      - {NAME}
+      - {widget name}
           id: #ABC123
           icon: {icon path}
           widget:
