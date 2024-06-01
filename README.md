@@ -7,9 +7,13 @@
  - Docker
  - Docker Compose
 ## Setup
-1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location
+1. Clone to your Docker installation location
 
-2. Find your Plex Token: _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
+   <code>git clone https://github.com/LionCityGaming/recently-added.git</code>
+
+2. Find your Plex Token
+
+   _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 ## Configuration
 3. Define variables within <code>_**recently-added.py**_</code>:
 
