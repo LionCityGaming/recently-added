@@ -62,23 +62,24 @@ _**NOTE**_
 6. Add to **services.yaml**:
 
     ```yaml
-    - {widget name}
-        id: #ABC123
-        icon: {icon path}
+    - Widget Name:
+        icon: icon.png
+        id: ABC123
         widget:
           type: customapi
-          url: http://{IP}:4321/api/{endpoint}
+          url: http://{IP}/api/{endpoint}
+          method: GET
           display: list
           mappings:
             - field:
-                 0: title
-               additionalField:
+                0: title
+              additionalField:
                 field:
                   0: date_added
             - field:
                 1: title
-               additionalField:
-                 field:
+              additionalField:
+                field:
                   1: date_added
 ---
 _**NOTE**_
