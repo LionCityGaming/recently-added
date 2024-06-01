@@ -2,13 +2,8 @@ version: "3.8"
 services:
   recently-added:
     container_name: recently-added
-    ports:
-      - <port>:8080
-    image: recently-added
+    build: .
     environment:
-      - TZ=<timezone>
-    networks:
-      - <network>
-networks:
-  <network>:
-    external: true
+      - TZ=Asia/Singapore
+    ports:
+      - 4321:8080
