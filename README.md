@@ -26,7 +26,10 @@
      LIBRARY_TYPES = "your_plex_libraries"
 ## Installation
 
-4. Start up application by running <code>docker-compose up -d</code>
+4. Start up application
+
+   <code>docker-compose up -d</code>
+
 ---
 _**NOTE**_
 
