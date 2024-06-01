@@ -8,7 +8,8 @@ app = Flask(__name__)
 PLEX_IP = "your_plex_ip"
 PLEX_PORT = "your_plex_port"
 PLEX_TOKEN = "your_plex_token"
-LIBRARY_TYPES = "your_plex_libraries"  # Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
+# Comma-separated list of library types to create endpoints for (e.g. movie,show,anime)
+LIBRARY_TYPES = "your_plex_libraries"  
 
 # Convert LIBRARY_TYPES to a list
 LIBRARY_TYPES_LIST = [lib_type.strip() for lib_type in LIBRARY_TYPES.split(',')]
