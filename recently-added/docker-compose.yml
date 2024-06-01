@@ -1,9 +1,0 @@
-version: "3.8"
-services:
-  recently-added:
-    container_name: recently-added
-    build: .
-    environment:
-      - TZ=Asia/Singapore
-    ports:
-      - 4321:8080
