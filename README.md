@@ -10,9 +10,9 @@
  - Docker Compose
 
 # Setup
-1. Clone _**recently-added**_ to your Docker installation location:
+1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location:
 
-2. Edit the information within _**recently-added.py**_:
+2. Edit the information within <code>_**recently-added.py**_</code>:
 
     ```python
      # Define the variables
@@ -31,10 +31,10 @@
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
-  - {endpoint} defined by <code>Library_Type</code> in _**recently_added.py**_.
+  - <code>{endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
 
 # Homepage Widget
-4. Add to _**custom.css**_:
+4. Add to <code>_**custom.css**_</code>:
 
     ```css 
     #ABC123>div>div.relative.flex.flex-row.w-full.service-container {
@@ -53,7 +53,7 @@
                 text-align: left; /* Adjusted to align left */
                 margin-left: auto;
             }
-5. Add the widget to _**services.yaml**_:
+5. Add the widget to <code>_**services.yaml**_</code>:
 
     ```yaml
       - {NAME}
