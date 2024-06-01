@@ -4,12 +4,12 @@
 
 ![picture](https://i.imgur.com/umopaWL.png)
 
-### Requirements:
+# Requirements
  - Python
  - Docker
  - Docker Compose
 
-### Initial Setup:
+# Initial Setup
 1. Clone _**recently-added**_ to your Docker installation location:
     - Dockerfile
     - requirements.txt
@@ -28,7 +28,7 @@
 
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
-### Installation:
+# Installation
 3. Build the image:
 
    <code>docker build -t recently-added .</code>
