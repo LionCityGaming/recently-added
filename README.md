@@ -24,7 +24,7 @@
      PLEX_PORT = "your_plex_port"
      PLEX_TOKEN = "your_plex_token"
 ### Note: 
-  - Find your authentication token / X-Plex-Token:
+  - Find your Plex Token:
 
     _**https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token/**_
 
