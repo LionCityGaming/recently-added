@@ -72,7 +72,6 @@
                 additionalField:
                   field:
                     1: date_added
-
 ## Note:
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
