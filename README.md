@@ -1,14 +1,11 @@
 # Recently Added on Plex
 
 ## A customapi widget for Homepage (https://gethomepage.dev/) that displays recently-added Movies and TV Shows on Plex.
-
 ![picture](https://i.imgur.com/umopaWL.png)
-
 ## Requirements
  - Python
  - Docker
  - Docker Compose
-
 ## Setup
 1. Clone <code>_**recently-added**</code>_ folder to your Docker installation location
 
@@ -26,8 +23,8 @@
 ## Installation
 
 4. Start up application by running <code>docker-compose up -d</code>
-
-### Note:
+---
+### _**Note:**_
 - Container creates API with a JSON output that can be used by Homepage.
 
 - API accessible at _**<code>http://{IP}:4321/api/{endpoint}</code>**_
@@ -37,8 +34,8 @@
     - Example: _**<code>http://{IP}:4321/api/movie</code>**_
 
 - API for all recent items in all libraries accesible at _**<code>http://{IP}:4321/api/all</code>**_
-
-# Homepage Widget
+---
+## Homepage Widget
 5. Add to <code>_**custom.css**_</code>:
 
     ```css 
@@ -79,7 +76,8 @@
                 additionalField:
                   field:
                     1: date_added
-### Note:
+---
+### _**Note:**_
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
 
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
@@ -87,6 +85,7 @@
   - This limit can be changed in the script.
     ```python
     recent_items = sorted_items[:50]
+---
 # Acknowledgements:
 
 Special thanks for all their help in making this happen!
