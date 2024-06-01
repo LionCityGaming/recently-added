@@ -76,6 +76,7 @@
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
   - Script supports 50 most recently added items per library, sorted from most recent <code>0</code> to earliest <code>49</code>.
   - This limit can be changed in the script.
-
+    ```python
+    recent_items = sorted_items[:50]
 # Acknowledgements:
 Special thanks to **haytada**, **MountainGod**, and **Plancke** in the Homepage Discord for all their help in making this happen! 
