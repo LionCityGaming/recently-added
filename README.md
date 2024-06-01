@@ -30,8 +30,8 @@
 
 ## Note:
 - Container creates API with a JSON output that can be used by Homepage.
-- API accessible at _**<code>http://{IP}:4321/api/recent_{endpoint}</code>**_
-  - <code>{endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
+- API accessible at _**<code>http://{IP}:4321/api/{recent_endpoint}</code>**_
+  - <code>{recent_endpoint}</code> defined by <code>Library_Type</code> in <code>_**recently_added.py**_</code>.
   - Example: _**<code>http://{IP}:4321/api/recent_movie</code>**_
 
 # Homepage Widget
