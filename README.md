@@ -62,24 +62,24 @@ _**NOTE**_
 6. Add to **services.yaml**:
 
     ```yaml
-      - {widget name}
-          id: #ABC123
-          icon: {icon path}
-          widget:
-            type: customapi
-            url: http://{IP}:4321/api/{endpoint}
-            display: list
-            mappings:
-              - field:
-                  0: title
-                additionalField:
-                  field:
-                    0: date_added
-              - field:
-                  1: title
-                additionalField:
-                  field:
-                    1: date_added
+    - {widget name}
+        id: #ABC123
+        icon: {icon path}
+        widget:
+          type: customapi
+          url: http://{IP}:4321/api/{endpoint}
+          display: list
+          mappings:
+            - field:
+                 0: title
+               additionalField:
+                field:
+                  0: date_added
+            - field:
+                1: title
+               additionalField:
+                 field:
+                  1: date_added
 ---
 _**NOTE**_
   - You can use <code>date_added</code> as the first field, and <code>title</code> in the <code>additionalField</code>, if you prefer.
