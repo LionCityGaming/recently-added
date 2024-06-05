@@ -3,7 +3,7 @@ version: "3.8"
 services:
   recently-added:
     container_name: recently-added
-    build: .
+    image: ghcr.io/lioncitygaming/recently-added:latest
     env_file:
       - .env
     ports:
