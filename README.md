@@ -15,16 +15,14 @@
 
    https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-plex-token
 ## Configuration
-3. Define variables within **recently-added.py**
+3. Define variables within **.env**
 
     ```python
      # Define the variables
-     PLEX_IP = "your_plex_ip"
-     PLEX_PORT = "your_plex_port"
-     PLEX_TOKEN = "your_plex_token"
-     # Comma-separated list of Plex library names to create endpoints for 
-     # (e.g. "Movies,TV Shows,Anime")
-     LIBRARY_NAMES = "your_plex_libraries"
+     PLEX_IP="your_plex_ip"
+     PLEX_PORT="your_plex_port"
+     PLEX_TOKEN="your_plex_token"
+     LIBRARY_NAMES="your_plex_libraries"
 ## Installation
 
 4. Start up application
