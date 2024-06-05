@@ -21,7 +21,7 @@
      PLEX_IP="your_plex_ip"
      PLEX_PORT="your_plex_port"
      PLEX_TOKEN="your_plex_token"
-     LIBRARY_NAMES="your_plex_libraries"
+     LIBRARY_NAMES="your_plex_libraries" # Comma-separated list of library names to create endpoints for (e.g. Movies,Shows,Anime)
 ## Installation
 
 4. Start up application
