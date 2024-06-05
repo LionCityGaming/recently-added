@@ -1,15 +1,17 @@
 from flask import Flask, jsonify
 import requests
 from datetime import datetime
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
+load_dotenv()  # Load environment variables from .env file
 
 # Define the variables
-PLEX_IP = "your_plex_ip"
-PLEX_PORT = "your_plex_port"
-PLEX_TOKEN = "your_plex_token"
-# Comma-separated list of library names to create endpoints for (e.g. Movies,Shows,Anime)
-LIBRARY_NAMES = "your_plex_libraries"  
+PLEX_IP = os.getenv("PLEX_IP")
+PLEX_PORT = os.getenv("PLEX_PORT")
+PLEX_TOKEN = os.getenv("PLEX_TOKEN")
+LIBRARY_NAMES = os.getenv("LIBRARY_NAMES")
 
 # Convert LIBRARY_NAMES to a list
 LIBRARY_NAMES_LIST = [lib_name.strip() for lib_name in LIBRARY_NAMES.split(',')]
