@@ -18,7 +18,6 @@
 3. Define variables within **.env**
 
     ```python
-     # Define the variables
      PLEX_IP="your_plex_ip"
      PLEX_PORT="your_plex_port"
      PLEX_TOKEN="your_plex_token"
