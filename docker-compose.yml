@@ -1,5 +1,4 @@
 version: "3.8"
-
 services:
   recently-added:
     container_name: recently-added
